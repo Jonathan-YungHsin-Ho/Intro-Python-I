@@ -31,8 +31,9 @@ if len(sys.argv) > 3:
     print(
         'Please call this program as follows: python 14_cal.py [month] [year]')
     sys.exit()
-if len(sys.argv) == 3:
+elif len(sys.argv) == 3:
     yyyy = int(sys.argv[2])
+
 if len(sys.argv) >= 2:
     mm = int(sys.argv[1])
 

@@ -4,7 +4,7 @@
 
 
 def is_even(arg):
-    return True if arg % 2 == 0 else None
+    return arg % 2 == 0
 
 
 # Read a number from the keyboard
