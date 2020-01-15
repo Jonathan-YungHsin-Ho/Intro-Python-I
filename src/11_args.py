@@ -20,10 +20,7 @@ print(f1(1, 2))
 
 
 def f2(*args):
-    sum = 0
-    for num in args:
-        sum += num
-    return sum
+    return sum(args)
 
 
 print(f2(1))                    # Should print 1
