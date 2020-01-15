@@ -23,18 +23,17 @@ import sys
 import calendar
 from datetime import datetime
 
-today = datetime.today()
-yyyy = today.year
-mm = today.month
+year = datetime.today().year
+month = datetime.today().month
 
 if len(sys.argv) > 3:
     print(
         'Please call this program as follows: python 14_cal.py [month] [year]')
     sys.exit()
 elif len(sys.argv) == 3:
-    yyyy = int(sys.argv[2])
+    year = int(sys.argv[2])
 
 if len(sys.argv) >= 2:
-    mm = int(sys.argv[1])
+    month = int(sys.argv[1])
 
-print(calendar.month(yyyy, mm))
+print(calendar.month(year, month))
